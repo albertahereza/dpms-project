@@ -3,6 +3,7 @@ from db_modules import appointment_db
 from db_modules import doctor_db
 from db_modules import medical_record_db
 from ui.ui_common import CrudScreen, Field, Column, choice, choice_int
+from ui.report_button import add_generate_report_button
 
 
 class MedicalRecordsScreen(CrudScreen):
@@ -63,3 +64,13 @@ class MedicalRecordsScreen(CrudScreen):
     def delete_row(self, row_id):
         if medical_record_db.delete_record(int(row_id)) == 0:
             raise ValueError("That record no longer exists.")
+
+        
+        # ---- NEW: Generate Medical Report button ----
+    def add_extra_buttons(self, bar):
+        add_generate_report_button(bar, self, self.report_patient_id)
+
+    def report_patient_id(self):
+       """Patient of the record selected in the table, or None if no row is selected."""
+       selected = self.tree.selection()
+       return self.rows[int(selected[0])]["patient_id"] if selected else None

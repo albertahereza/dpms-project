@@ -1,6 +1,7 @@
 """screen_patients.py - the Patients screen (Member 3)."""
 from db_modules import patient_db
 from ui.ui_common import CrudScreen, Field, Column
+from ui.report_button import add_generate_report_button
 
 
 class PatientsScreen(CrudScreen):
@@ -41,3 +42,8 @@ class PatientsScreen(CrudScreen):
     def delete_row(self, row_id):
         if patient_db.delete_patient(int(row_id)) == 0:
             raise ValueError("That patient no longer exists.")
+
+
+    # ---- NEW: Generate Medical Report button ----
+    def add_extra_buttons(self, bar):
+        add_generate_report_button(bar, self, lambda: self.selected_id() or None)
