@@ -1,5 +1,5 @@
 """
-config.py - database connection settings for DPMS (Group 7).
+config.py - database connection settings for DPMS.
 
 Every member sets their OWN password on their own machine.
 Option 1: edit the "CHANGE_ME" fallback below (do not share your edited copy).

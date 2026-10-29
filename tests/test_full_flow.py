@@ -1,5 +1,5 @@
 """
-test_full_flow.py - Step 14: automated end-to-end test of the whole DPMS (Group 7).
+test_full_flow.py - Step 14: automated end-to-end test of the whole DPMS.
 
 Run from inside the dpms_app folder:   python -m tests.test_full_flow
 

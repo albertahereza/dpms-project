@@ -37,7 +37,7 @@ class App(tk.Tk):
         super().__init__()
         self.user = user                       # {user_id, username, role}
         self.logout_requested = False
-        self.title("DPMS - Digital Patient Management System (Group 7)")
+        self.title("DPMS - Digital Patient Management System")
         self.geometry("1200x760")
         self.minsize(1000, 640)
         apply_style(self)
@@ -112,7 +112,7 @@ class App(tk.Tk):
 
     def about(self):
         messagebox.showinfo("About DPMS",
-                            "Digital Patient Management System\nGroup 7\n"
+                            "Digital Patient Management System"
                             "PostgreSQL + Python (Tkinter)\n\n"
                             f"Signed in as {self.user['username']} ({self.user['role']})")
 

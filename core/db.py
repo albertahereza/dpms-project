@@ -1,5 +1,5 @@
 """
-db.py - the ONE shared database connection module for DPMS (Group 7).
+db.py - the ONE shared database connection module for DPMS.
 
 Every other file imports from here:
     from core.db import fetch_all, fetch_one, execute, execute_returning, explain_error

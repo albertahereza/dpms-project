@@ -1,4 +1,4 @@
-# DPMS - Digital Patient Management System (Group 7)
+# DPMS - Digital Patient Management System
 
 A clinic system built with **PostgreSQL** (database) and **Python / Tkinter** (application).
 It handles patients, doctors, appointments, medical records, prescriptions, payments, login with roles, and reports with charts.

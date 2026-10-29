@@ -1,5 +1,5 @@
 """
-reorganize_project.py - ONE-TIME tidy-up of the dpms_app folder (Group 7).
+reorganize_project.py - ONE-TIME tidy-up of the dpms_app folder .
 
 It does three things and nothing else:
   1. MOVES each Python file into a folder for its job.

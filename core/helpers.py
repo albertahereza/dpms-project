@@ -1,5 +1,5 @@
 """
-helpers.py - tiny shared helpers for the database modules (Group 7).
+helpers.py - tiny shared helpers for the database modules.
 """
 
 

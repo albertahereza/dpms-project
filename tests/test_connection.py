@@ -1,5 +1,5 @@
 """
-test_connection.py - Step 8 check for DPMS (Group 7).
+test_connection.py - Step 8 check for DPMS.
 Run from inside the dpms_app folder:   python -m tests.test_connection
 """
 import psycopg2

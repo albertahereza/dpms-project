@@ -1,5 +1,5 @@
 """
-test_modules.py - Step 9 check for DPMS (Group 7).
+test_modules.py - Step 9 check for DPMS.
 Run from inside the dpms_app folder:   python -m tests.test_modules
 
 It adds temporary rows, uses every module, then deletes what it added.
