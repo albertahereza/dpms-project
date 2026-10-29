@@ -33,7 +33,7 @@ class LoginWindow(tk.Tk):
         frame.pack(fill="both", expand=True)
         frame.columnconfigure(0, weight=1)
         ttk.Label(frame, text="DPMS", style="Title.TLabel").grid(row=0, column=0, sticky="w")
-        ttk.Label(frame, text="Digital Patient Management System\nGroup 7",
+        ttk.Label(frame, text="Digital Patient Management System\n",
                   style="Sub.TLabel").grid(row=1, column=0, sticky="w", pady=(0, 20))
 
         ttk.Label(frame, text="Username").grid(row=2, column=0, sticky="w")
